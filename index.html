@@ -20,82 +20,96 @@
     <img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1035087265357220&ev=PageView&noscript=1"/>
   </noscript>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: radial-gradient(circle at top, #001010, #000);
-      font-family: 'Segoe UI', sans-serif;
-      color: #00ffcc;
-      text-align: center;
-    }
 
-    .container {
-      margin-top: 60px;
-      padding: 0 20px;
-    }
+  <!-- EVENTO CLICK A WHATSAPP -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const whatsappBtn = document.getElementById('whatsapp-btn');
+      if (whatsappBtn) {
+        whatsappBtn.addEventListener('click', function () {
+          fbq('trackCustom', 'ClickWhatsApp');
+        });
+      }
+    });
+  </script>
 
-    .slot-icon {
-      font-size: 72px;
-      margin-bottom: 10px;
-      text-shadow: 0 0 30px #00ffd5;
-    }
+<style>
+ body {
+  margin: 0;
+  padding: 0;
+  background: url('fondo.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+  color: #00ffcc;
+  text-align: center;
+}
 
-    .title {
-      font-size: 48px;
-      font-weight: bold;
-      color: #00ffd5;
-      text-shadow: 0 0 25px #00ffcc, 0 0 40px #00ffa2;
-    }
+  .container {
+    margin-top: 60px;
+    padding: 0 20px;
+  }
 
-    .card {
-      margin: 40px auto;
-      padding: 30px 20px;
-      background: linear-gradient(145deg, #002020, #000000);
-      border-radius: 20px;
-      max-width: 500px;
-      box-shadow: 0 0 30px #00ffcc55;
-      border: 1px solid #00ffd5;
-    }
+  .slot-icon {
+    font-size: 72px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 30px #00ffd5;
+  }
 
-    .cta-text {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 30px;
-      color: #c0ffff;
-    }
+  .title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #00ffd5;
+    text-shadow: 0 0 25px #00ffcc, 0 0 40px #00ffa2;
+  }
 
-    .cta-button {
-      display: inline-block;
-      padding: 15px 30px;
-      background: linear-gradient(45deg, #00ffaa, #00d4ff);
-      color: black;
-      font-weight: bold;
-      font-size: 20px;
-      border: none;
-      border-radius: 12px;
-      text-decoration: none;
-      box-shadow: 0 0 25px #00ffc3aa;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+  .card {
+    margin: 40px auto;
+    padding: 30px 20px;
+    background: linear-gradient(145deg, #002020, #000000);
+    border-radius: 20px;
+    max-width: 500px;
+    box-shadow: 0 0 30px #00ffcc55;
+    border: 1px solid #00ffd5;
+  }
 
-    .cta-button:hover {
-      transform: scale(1.08);
-      box-shadow: 0 0 40px #00fff2;
-    }
+  .cta-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #c0ffff;
+  }
 
-    .whatsapp-icon {
-      margin-left: 10px;
-      vertical-align: middle;
-    }
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #00ffaa, #00d4ff);
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 0 25px #00ffc3aa;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 
-    .footer {
-      margin-top: 50px;
-      font-size: 14px;
-      color: #66ffff;
-      opacity: 0.9;
-    }
-  </style>
+  .cta-button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 40px #00fff2;
+  }
+
+  .whatsapp-icon {
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+
+  .footer {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #66ffff;
+    opacity: 0.9;
+  }
+</style>
 </head>
 <body>
   <div class="container">
@@ -108,6 +122,7 @@
         ⚡ HACÉ CLICK EN EL BOTÓN DE ABAJO ⚡
       </div>
       <a
+        id="whatsapp-btn"
         class="cta-button"
         href="https://wa.me/5492235488107"
         target="_blank"
