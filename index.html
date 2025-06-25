@@ -24,59 +24,64 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #5c0000;
-      font-family: Arial, sans-serif;
-      color: white;
+      background: radial-gradient(circle at top, #001010, #000);
+      font-family: 'Segoe UI', sans-serif;
+      color: #00ffcc;
       text-align: center;
     }
 
     .container {
       margin-top: 60px;
+      padding: 0 20px;
     }
 
     .slot-icon {
-      font-size: 64px;
+      font-size: 72px;
+      margin-bottom: 10px;
+      text-shadow: 0 0 30px #00ffd5;
     }
 
     .title {
       font-size: 48px;
       font-weight: bold;
-      color: #ffcc00;
-      text-shadow: 0 0 10px #ffcc00;
+      color: #00ffd5;
+      text-shadow: 0 0 25px #00ffcc, 0 0 40px #00ffa2;
     }
 
     .card {
       margin: 40px auto;
       padding: 30px 20px;
-      background-color: #1a0000;
+      background: linear-gradient(145deg, #002020, #000000);
       border-radius: 20px;
       max-width: 500px;
-      box-shadow: 0 0 20px #000;
+      box-shadow: 0 0 30px #00ffcc55;
+      border: 1px solid #00ffd5;
     }
 
     .cta-text {
       font-size: 20px;
       font-weight: bold;
       margin-bottom: 30px;
+      color: #c0ffff;
     }
 
     .cta-button {
       display: inline-block;
-      padding: 15px 25px;
-      background: linear-gradient(45deg, #ffc107, #ff5722);
-      color: white;
+      padding: 15px 30px;
+      background: linear-gradient(45deg, #00ffaa, #00d4ff);
+      color: black;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 20px;
       border: none;
-      border-radius: 10px;
+      border-radius: 12px;
       text-decoration: none;
-      box-shadow: 0 0 15px #ff5722;
-      transition: 0.3s;
+      box-shadow: 0 0 25px #00ffc3aa;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .cta-button:hover {
-      background: linear-gradient(45deg, #ff9800, #e64a19);
-      box-shadow: 0 0 25px #ff5722;
+      transform: scale(1.08);
+      box-shadow: 0 0 40px #00fff2;
     }
 
     .whatsapp-icon {
@@ -87,19 +92,20 @@
     .footer {
       margin-top: 50px;
       font-size: 14px;
+      color: #66ffff;
       opacity: 0.9;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="slot-icon">🎰</div>
+    <div class="slot-icon">⚡</div>
     <div class="title">LA CASA DE LA GLORIA</div>
 
     <div class="card">
       <div class="cta-text">
         ¡CREÁ TU CUENTA AHORA!<br />
-        🔥 HACÉ CLICK EN EL BOTÓN DE ABAJO 🔥
+        ⚡ HACÉ CLICK EN EL BOTÓN DE ABAJO ⚡
       </div>
       <a
         class="cta-button"
@@ -118,7 +124,7 @@
 
     <div class="footer">
       MÍNIMO DE CARGA: $1000<br />
-      RETIROS SIN LIMITES LAS 24 HS DEL DIA <br />
+      RETIROS SIN LÍMITES LAS 24 HS DEL DÍA <br />
       RULETA EN VIVO - SLOTS - APUESTAS
     </div>
   </div>
